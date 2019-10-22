@@ -41,6 +41,7 @@ def kruskal(graph):
        weight, u, v = edge
        # checks if current edge do not close cycle
        if find_set(u) != find_set(v):
+           #Sum the edges
            kmst.add(edge)
            union(u, v, edges)
 
